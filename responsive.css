@@ -1,0 +1,91 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero,
+.top-news,
+.scores,
+.weather,
+.recent-news {
+    order: 10;
+}
+
+@media screen and (min-width: 550px) {
+    .hero {
+        width: 60%;
+        order: 0;
+    }
+    .weather {
+        width: 40%;
+        order: 1;
+    }
+    .top-news {
+        width: 100%;
+        order: 2;
+    }
+    .scores {
+        width: 100%;
+        order: 3;
+    }
+    .recent-news {
+        width: 100%;
+        order: 4;
+    }
+    .top-news__item {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero {
+        width: 50%;
+        order: 0;
+    }
+    .top-news {
+        width: 50%;
+        order: 1;
+    }
+    .scores {
+        width: 60%;
+        order: 2;
+    }
+    .weather {
+        width: 40%;
+        order: 3;
+    }
+    .recent-news {
+        width: 100%;
+        order: 4;
+    }
+    .top-news__item {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    header,
+    .nav,
+    main {
+        width: 850px;
+        margin: 0 auto;
+    }
+    .header__logo {
+        height: 93px;
+    }
+    .header__title {
+        font-size: 47px;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:550px) {
+    .seven-day-fc .tem-low,
+    .seven-day-fc .temp-high {
+        display: inline-block;
+        width: 30%;
+    }
+    .seven-day-fc .icon {
+        width: 60px;
+        height: 60px;
+    }
+}
