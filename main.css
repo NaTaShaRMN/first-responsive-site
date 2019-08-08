@@ -129,6 +129,11 @@ ul {
     color: #212121;
 }
 
+.open {
+    transform: translate(0, 0);
+    transition: transform 0.3s ease;
+}
+
 
 /*
  *

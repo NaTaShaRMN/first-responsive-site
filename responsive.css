@@ -114,11 +114,23 @@ body {
     td {
         font-size: 1.2em
     }
+    .description>h2 {
+        font-size: 1.6em;
+    }
+    .description>p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .nav {
         display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: white;
+        width: 213px;
+        transform: translate(0, 0);
+        transition: transform 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
     }
     .icon {
         display: inline-block;
@@ -165,7 +177,7 @@ body {
     .snippet>p {
         font-size: 1.3em;
         max-height: 3.7em;
-        overflow: scroll;
+        overflow: auto;
     }
     footer>a {
         font-size: 2em;
@@ -173,5 +185,11 @@ body {
     .scores>td,
     .scores>th {
         font-size: 3em;
+    }
+    .description>h2 {
+        font-size: 1.6em;
+    }
+    .description>p {
+        font-size: 1.2em;
     }
 }
